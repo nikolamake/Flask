@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Clothes Shop
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <ul class="nav nav-pills justify-content-end align-items-end">
+                <li class="nav-item"><a href="/catalogue/" class="nav-link">Каталог</a></li>
+                <li class="nav-item"><a href="/data/" class="nav-link">Данные</a></li>
+            </ul>
+        </div>
+        
+        {% block content %}
+            Here can be your clothes brand pictures
+        {% endblock %}
+        <div class="footer">
+            <p>All rights reserved &copy;</p>
+        </div>
+    </div>
+</body>
+</html>

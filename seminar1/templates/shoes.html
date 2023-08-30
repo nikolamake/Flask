@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+    {{'Shoes'}}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <h1>Shoes</h1>
+        <img src="{{url_for('static', filename='image/shoes.jpg')}}" alt="Shoes" width="300">
+    </div>
+{% endblock %}
